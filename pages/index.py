@@ -16,13 +16,16 @@ column1 = dbc.Col(
         dcc.Markdown(
             """
         
-            ## Your Value Proposition
+            ## Predicting the Outcome of a League of Legends Match
 
-            Emphasize how the app will benefit users. Don't emphasize the underlying technology.
+            LOL Match Predictor is an application that predicts the outcome of a League of Legends match.
 
-            ✅ RUN is a running app that adapts to your fitness levels and designs personalized workouts to help you improve your running.
+            Given certain inputs based off the current statistics of the match, the predictor will return whether the blue team will lose or win.
 
-            ❌ RUN is the only intelligent running app that uses sophisticated deep neural net machine learning to make your run smarter because we believe in ML driven workouts.
+            Since it is difficult to predict the outcome of the game from the beginning, it is worth noting that the models used were trained
+            using data by the 10 minute mark.
+            
+            Thus, to have an accurate prediction, it is recommended to wait at least 10 minutes into the game before inputing the values.
 
             """
         ),
