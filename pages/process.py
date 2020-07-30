@@ -17,12 +17,16 @@ column1 = dbc.Col(
         
             ## Process
 
-            The logistic regression model from the sklearn library, was trained on 80% of the following 
+            The logistic regression model from the sklearn library, was trained on 64% of the following 
             [dataset](https://www.kaggle.com/bobbyscience/league-of-legends-diamond-ranked-games-10-min) 
-            found on Kaggle.com. Then is was validated with the remaining 20% to make sure the accuracy score
-            of the model was as high as possible. After doing to testing with permuation feature importance,
-            I found out that the most prominent features that affect the outcome of a League of Legends match
-            was the gold difference and the total amount of gold for each team.
+            found on Kaggle.com. Then is was validated with the remaining 16% to make sure the accuracy score
+            of the model was as high as possible. Between the Logistic Regression model and Random Forest Classifier,
+            the Logistic Regression model proved to obtain a higher accuracy score. Thus the model was scored on
+            the remaining 20% of the data to recieve the final test score. 
+            
+            After testing with permuation feature importance, I found out that the most prominent features that 
+            affect the outcome of a League of Legends match was the gold difference and the total amount of gold
+            for each team.
             
             Due to the League of Legends Championship Series Heads-Up Display, the picture on the right, having 
             the prominent stats displayed at the top, it would be easy for the user of this application to input 
