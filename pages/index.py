@@ -20,27 +20,18 @@ column1 = dbc.Col(
 
             LOL Match Predictor is an application that predicts the outcome of a League of Legends match.
 
-            Given certain inputs based off the current statistics of the match, the predictor will return whether the blue team will lose or win.
-
-            Since it is difficult to predict the outcome of the game from the beginning, it is worth noting that the models used were trained
-            using data by the 10 minute mark.
-            
-            Thus, to have an accurate prediction, it is recommended to wait at least 10 minutes into the game before inputing the values.
+            Given certain inputs based off the statistics of the match at the 10 minute mark, the predictor will return whether the blue team will lose or win.
 
             """
         ),
-        dcc.Link(dbc.Button('Your Call To Action', color='primary'), href='/predictions')
+        dcc.Link(dbc.Button('Predictor', color='primary'), href='/predictor')
     ],
     md=4,
 )
 
-gapminder = px.data.gapminder()
-fig = px.scatter(gapminder.query("year==2007"), x="gdpPercap", y="lifeExp", size="pop", color="continent",
-           hover_name="country", log_x=True, size_max=60)
-
 column2 = dbc.Col(
     [
-        dcc.Graph(figure=fig),
+        html.Img(src='assets/league-of-legends.jpg', className='img-fluid')
     ]
 )
 

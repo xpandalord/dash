@@ -7,17 +7,16 @@ from dash.dependencies import Input, Output
 
 # Imports from this application
 from app import app, server
-from pages import index, predictions, insights, process, pagename
+from pages import index, predictor, insights, process
 
 # Navbar docs: https://dash-bootstrap-components.opensource.faculty.ai/l/components/navbar
 navbar = dbc.NavbarSimple(
     brand='League of Legends Match Predictor',
     brand_href='/', 
     children=[
-        dbc.NavItem(dcc.Link('Predictions', href='/predictions', className='nav-link')), 
+        dbc.NavItem(dcc.Link('Predictor', href='/predictor', className='nav-link')), 
         dbc.NavItem(dcc.Link('Insights', href='/insights', className='nav-link')), 
         dbc.NavItem(dcc.Link('Process', href='/process', className='nav-link')), 
-        dbc.NavItem(dcc.Link('Page Name', href='/pagename', className='nav-link')),
     ],
     sticky='top',
     color='primary', 
@@ -67,14 +66,12 @@ app.layout = html.Div([
 def display_page(pathname):
     if pathname == '/':
         return index.layout
-    elif pathname == '/predictions':
-        return predictions.layout
+    elif pathname == '/predictor':
+        return predictor.layout
     elif pathname == '/insights':
         return insights.layout
     elif pathname == '/process':
         return process.layout
-    elif pathname == '/pagename':
-        return pagename.layout
     else:
         return dcc.Markdown('## Page not found')
 
