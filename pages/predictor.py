@@ -5,7 +5,7 @@ import dash_core_components as dcc
 import dash_html_components as html
 from dash.dependencies import Input, Output
 from joblib import load
-pipeline = load('assets/pipeline.joblib')
+pipeline = load('notebooks/league-pipeline.joblib')
 
 # Imports from this application
 from app import app
