@@ -74,7 +74,8 @@ column1 = dbc.Col(
             value=0, 
             marks={n: str(n) for n in range(0,5,1)}, 
             className='mb-5',
-        ),
+        )
+        
     ],
     md=4,
 )
