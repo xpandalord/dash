@@ -15,6 +15,7 @@ matplotlib = "*"
 joblib = "==0.16.0"
 scikit-learn = "==0.23.1"
 numpy = "==1.19.1"
+jupyterlab = "*"
 
 [requires]
 python_version = "3"
