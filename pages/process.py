@@ -45,14 +45,13 @@ column1 = dbc.Col(
 
             """
         )
-        
     ],
 )
 
 column2 = dbc.Col(
     [
-        html.Img(src='assets/lcs-hud.jpg', className='img-fluid'),
-        dcc.Link(dbc.Button('Home', color='primary'), href='/')
+        html.Img(src="assets/lcs-hud.jpg", className="img-fluid"),
+        dcc.Link(dbc.Button("Home", color="primary"), href="/"),
     ]
 )
 
