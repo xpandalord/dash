@@ -29,6 +29,8 @@ column1 = dbc.Col(
     md=4,
 )
 
-column2 = dbc.Col([html.Img(src="assets/league-of-legends.jpg", className="img-fluid")])
+column2 = dbc.Col(
+    [html.Img(src="assets/league-of-legends.jpg", className="img-fluid")]
+)
 
 layout = dbc.Row([column1, column2])

@@ -47,7 +47,9 @@ column1 = dbc.Col(
 
 column2 = dbc.Col(
     [
-        html.Img(src="assets/pdp-blue-totalGold-goldDiff.png", className="img-fluid"),
+        html.Img(
+            src="assets/pdp-blue-totalGold-goldDiff.png", className="img-fluid"
+        ),
         dcc.Link(dbc.Button("Process", color="primary"), href="/process"),
     ]
 )

@@ -14,9 +14,15 @@ navbar = dbc.NavbarSimple(
     brand="League of Legends Match Predictor",
     brand_href="/",
     children=[
-        dbc.NavItem(dcc.Link("Predictor", href="/predictor", className="nav-link")),
-        dbc.NavItem(dcc.Link("Insights", href="/insights", className="nav-link")),
-        dbc.NavItem(dcc.Link("Process", href="/process", className="nav-link")),
+        dbc.NavItem(
+            dcc.Link("Predictor", href="/predictor", className="nav-link")
+        ),
+        dbc.NavItem(
+            dcc.Link("Insights", href="/insights", className="nav-link")
+        ),
+        dbc.NavItem(
+            dcc.Link("Process", href="/process", className="nav-link")
+        ),
     ],
     sticky="top",
     color="primary",
@@ -46,7 +52,9 @@ footer = dbc.Container(
                     ),
                     html.A(
                         html.I(className="fab fa-linkedin mr-1"),
-                        href="https://www.linkedin.com/in/andy-tran-79b76a129/",
+                        href=(
+                            "https://www.linkedin.com/in/andy-tran-79b76a129/"
+                        ),
                     ),
                     html.A(
                         html.I(className="fab fa-twitter-square mr-1"),
